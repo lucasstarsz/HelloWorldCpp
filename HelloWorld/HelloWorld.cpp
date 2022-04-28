@@ -1,14 +1,20 @@
 // HelloWorld.cpp : My attempt at learning C++ from the very beginning.
 
 #include <iostream>
-#include <stdio.h>
 
 int main() {
-	std::cout << "Hello World!" << std::endl;
-	printf("C makes an appearance!\nEnter a character. ");
+	std::cout << "Hey so I'm gonna need you to input a number kthx: ";
 
-	int letter = getchar();
-	std::cout << (char) letter << " was printed." << std::endl;
+	int num = 0;
+	std::cin >> num;
+	std::cout << "\nOk so like you put " << num << " and I'm really proud of you haha\n";
+
+	std::cout << "And now I need two numbers separated by a space ok go: ";
+
+	double x = 0.0;
+	double y = 0.0;
+	std::cin >> x >> y;
+	std::cout << "\nCool so " << x << " + " << y << " = " << x + y << "\n";
 
 	return EXIT_SUCCESS;
 }
