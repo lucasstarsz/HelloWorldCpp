@@ -7,10 +7,10 @@ void noop(int &) {
 }
 
 int main() {
-	int x;
-	noop(x);
+	int undefined;
+	noop(undefined);
 
-	std::cout << "Hey look at this, an unitialized variable with the value " << x << ". Crazy\n";
+	std::cout << "Hey look at this, an unitialized variable with the value " << undefined << ". Crazy\n";
 
 	return EXIT_SUCCESS;
 }
